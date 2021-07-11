@@ -1,0 +1,13 @@
+.container {
+  border: 1px solid rgb(155, 155, 155);
+  height: 600px;
+  width: 500px;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 35px;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
