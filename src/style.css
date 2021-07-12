@@ -24,13 +24,28 @@
   text-align: center;
 }
 
+.day-one, .day-two, .day-three, .day-four, .day-five {
+  font-weight: bold;
+}
+
+.day-one:hover,
+.day-two:hover,
+.day-three:hover,
+.day-four:hover,
+.day-five:hover {
+  background: linear-gradient(#8ca69b, #18525e);
+  border-radius: 15px;
+  height: 80px;
+  width: 200px;
+  }
+
 .day-one-img,
 .day-two-img,
 .day-three-img,
 .day-four-img,
 .day-five-img {
-  width: 35px;
-  height: 35px;
+  width: 12px;
+  height: 12px;
 }
 
 .combined-col {
@@ -41,8 +56,8 @@
 .vLine {
   border-left: 2px solid #8ca69b;
   height: 450px;
-  width: 60px;
-  margin-left: 40%;
+  width: 45px;
+  margin-left: 20%;
 }
 
 button {
@@ -71,12 +86,6 @@ button {
   text-align: center;
 }
 
-.days {
-  font-size: larger;
-  font-weight: bold;
-  padding-left: 0%;
-}
-
 .main-day {
   text-align: center;
 }
@@ -89,6 +98,11 @@ button {
 img {
   width: 60px;
 }
+.days {
+  font-size: larger;
+  font-weight: bold;
+  padding-left: 0%;
+}
 
 .temp-details {
   text-align: center;
@@ -98,3 +112,5 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+<!-- -->
