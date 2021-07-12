@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid #fff;
+  height: 500px;
+  width: 500px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/786/original/sky.jpg?1626101319")
+    midnightblue;
+}
+
+.days {
+  font-size: larger;
+  font-weight: bold;
+  padding-left: 0%;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
