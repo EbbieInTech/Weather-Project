@@ -1,3 +1,8 @@
+.container {
+  margin-top: 20px;
+  padding: 25px;
+}
+
 .card {
   border: 1px solid #fff;
   height: 500px;
@@ -17,7 +22,29 @@
   padding-left: 0%;
 }
 
+.vLine {
+  border-left: 2px solid #8ca69b;
+  height: 400px;
+  margin-left: 5%;
+}
+
 button {
-  display: block;
-  margin: 0 auto;
+  margin: 10px 0 0 55px;
+}
+
+.btn-primary {
+  border: thick double #8ca69b;
+  background: transparent;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #8ca69b;
+  border: thick double #18525e;
+  color: #18525e;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌎</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
 }
