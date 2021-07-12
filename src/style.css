@@ -7,8 +7,8 @@
   border: 1px solid #fff;
   height: 500px;
   width: 500px;
-  padding: 40px;
-  display: flex;
+  padding: 10px 40px 10px 10px;
+  display: block;
   justify-content: center;
   margin: 0 auto;
   border-radius: 50px;
@@ -16,20 +16,37 @@
     midnightblue;
 }
 
+.card-body {
+  font-family: "Hachi Maru Pop", cursive;
+}
+
 .days {
-  font-size: larger;
-  font-weight: bold;
-  padding-left: 0%;
+  text-align: center;
+}
+
+.day-one-img,
+.day-two-img,
+.day-three-img,
+.day-four-img,
+.day-five-img {
+  width: 35px;
+  height: 35px;
+}
+
+.combined-col {
+  display: flex;
+  padding: 0 0 0 10px;
 }
 
 .vLine {
   border-left: 2px solid #8ca69b;
-  height: 400px;
-  margin-left: 5%;
+  height: 450px;
+  width: 60px;
+  margin-left: 40%;
 }
 
 button {
-  margin: 10px 0 0 55px;
+  margin: 10px 0 0 50px;
 }
 
 .btn-primary {
@@ -47,4 +64,37 @@ button {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌎</text></svg>")
       16 0,
     auto; /*!emojicursor.app*/
+}
+
+.tampa {
+  font-size: 45px;
+  text-align: center;
+}
+
+.days {
+  font-size: larger;
+  font-weight: bold;
+  padding-left: 0%;
+}
+
+.main-day {
+  text-align: center;
+}
+
+.main-temp {
+  font-size: 30px;
+  text-align: center;
+}
+
+img {
+  width: 60px;
+}
+
+.temp-details {
+  text-align: center;
+}
+.change-temp {
+  white-space: nowrap;
+  display: block;
+  margin: 0 auto;
 }
