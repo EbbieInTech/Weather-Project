@@ -90,27 +90,21 @@
               </div>
 
               <div class="col-6">
-                <input
-                  type="text"
-                  placeholder="Enter a city"
-                  autofocus="on"
-                  autocomplete="off"
-                  id="search-text-input"
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  id="current-location"
-                >
-                  Submit
-                </button>
+                <form id="search-form">
+                  <input
+                    type="text"
+                    placeholder="Enter a city"
+                    autofocus="on"
+                    autocomplete="off"
+                    id="search-text-input"
+                  />
+                  <input type="submit" value="search" id="current-location" />
+                </form>
 
-                <div class="row">
-                  <p class="tampa">Tampa</p>
+                <div class="row" id="selector-city">
+                  <p class="city">Tampa</p>
                 </div>
-                <div class="row">
-                  <p id="main-day">Sunday, July 25</p>
-                </div>
+                <div class="row" id="main-day">Sunday 2:00</div>
                 <div class="row">
                   <p class="main-temp">
                     89°F

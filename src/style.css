@@ -60,11 +60,8 @@
   margin-left: 20%;
 }
 
-button {
+#current-location {
   margin: 10px 0 0 50px;
-}
-
-.btn-primary {
   border: thick double #8ca69b;
   background: transparent;
   border-radius: 5px;
@@ -72,7 +69,7 @@ button {
   transition: all 200ms ease-in-out;
 }
 
-.btn-primary:hover {
+#current-location:hover {
   background: #8ca69b;
   border: thick double #18525e;
   color: #18525e;
@@ -81,12 +78,13 @@ button {
     auto; /*!emojicursor.app*/
 }
 
-.tampa {
+.city {
   font-size: 45px;
   text-align: center;
 }
 
-#main-day {
+#main-day.row {
+  display: block;
   text-align: center;
 }
 
