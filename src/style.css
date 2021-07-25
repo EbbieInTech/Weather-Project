@@ -86,7 +86,7 @@ button {
   text-align: center;
 }
 
-.main-day {
+#main-day {
   text-align: center;
 }
 
@@ -105,6 +105,10 @@ img {
 }
 
 .temp-details {
+  text-align: center;
+}
+
+.main-weather {
   text-align: center;
 }
 .change-temp {

@@ -93,25 +93,34 @@
                 <input
                   type="text"
                   placeholder="Enter a city"
-                  autofocus
+                  autofocus="on"
                   autocomplete="off"
+                  id="search-text-input"
                 />
-                <button type="submit" class="btn btn-primary">Search</button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="current-location"
+                >
+                  Submit
+                </button>
 
                 <div class="row">
                   <p class="tampa">Tampa</p>
                 </div>
                 <div class="row">
-                  <p class="main-day">Sunday Partly Cloudy</p>
+                  <p id="main-day">Sunday, July 25</p>
                 </div>
                 <div class="row">
                   <p class="main-temp">
                     89°F
+                    <br />
                     <img
                       src="images/004-clouds and sun.png"
                       alt="partly cloudy"
                     />
                   </p>
+                  <p class="main-weather">Partly Cloudy</p>
                 </div>
                 <div class="row">
                   <p class="change-temp">Temperature °C|°F</p>
