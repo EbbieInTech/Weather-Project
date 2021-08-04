@@ -19,7 +19,7 @@ newdate.innerHTML = changeDate(now);
 function showTemperature(response) {
   let mainTemperature = document.querySelector("#main-temp");
   let temperature = Math.round(response.data.main.temp);
-  mainTemperature.innerHTML = temperature;
+  mainTemperature.innerHTML = `${temperature}`;
 }
 
 //add a search engine & display name
@@ -31,12 +31,10 @@ function search(event) {
     newCity.innerHTML = `${currentCity.value}`;
   } else {
     newCity.innerHTML = null;
-    alert("Please enter a city");
   }
-  let units = "metric";
+  let units = "imperial";
   let apiKey = "dde0b77715e30bdfed2e6bd8362bfd70";
-  let apiEndPoint = "https://api.openweathermap.org/data/2.5/weather";
-  let apiUrl = `${apiEndPoint}?q=${currentCity.value}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity.value}&appid=${apiKey}&units=${units}`;
   console.log(apiUrl);
   axios.get(apiUrl).then(showTemperature);
 }
@@ -45,8 +43,7 @@ function showPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let key = "dde0b77715e30bdfed2e6bd8362bfd70";
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=metric`;
-  console.log(latitude, longitude);
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${key}`;
   axios.get(url).then(showTemperature);
 }
 
@@ -56,3 +53,6 @@ function clickGeoButton() {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
+
+let geoLocationButton = document.querySelector("#geo-location-button");
+geoLocationButton.addEventListener("click", clickGeoButton);
