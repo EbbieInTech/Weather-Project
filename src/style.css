@@ -28,17 +28,6 @@
   font-weight: bold;
 }
 
-.day-one:hover,
-.day-two:hover,
-.day-three:hover,
-.day-four:hover,
-.day-five:hover {
-  background: linear-gradient(#8ca69b, #18525e);
-  border-radius: 15px;
-  height: 85px;
-  width: 200px;
-  }
-
 .day-one-img,
 .day-two-img,
 .day-three-img,
@@ -65,7 +54,7 @@
   border: thick double #8ca69b;
   background: transparent;
   border-radius: 5px;
-  padding: 2px 5px 2px 5px;
+  padding: 0px 5px 2px 5px;
   transition: all 200ms ease-in-out;
 }
 
@@ -78,7 +67,27 @@
     auto; /*!emojicursor.app*/
 }
 
+#geo-location-button {
+  margin: 5px 0 0 45px;
+  border: thick double #8ca69b;
+  background: transparent;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  transition: all 200ms ease-in-out;
+  color: black;
+}
+
+#geo-location-button:hover {
+  background: #8ca69b;
+  border: thick double #18525e;
+  color: #18525e;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌎</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
+
 .city {
+  margin: 0px;
   font-size: 45px;
   text-align: center;
 }
@@ -108,6 +117,7 @@ img {
 
 .main-weather {
   text-align: center;
+  margin: 0px;
 }
 .change-temp {
   white-space: nowrap;

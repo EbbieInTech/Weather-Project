@@ -50,7 +50,9 @@ function showPosition(position) {
   axios.get(url).then(showTemperature);
 }
 
-navigator.geolocation.getCurrentPosition(showPosition);
+function clickGeoButton() {
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
