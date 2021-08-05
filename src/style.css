@@ -72,7 +72,7 @@
 }
 
 #geo-location-button {
-  margin: 5px 0 0 45px;
+  margin: 5px 0 0 33px;
   border: thick double #8ca69b;
   background: transparent;
   border-radius: 5px;
@@ -115,9 +115,10 @@ img {
   width: 100px;
   display: block;
   margin: 0 auto;
+  height: 70px;
 }
 .days {
-  font-size: larger;
+  font-size: x-large;
   font-weight: bold;
   padding-left: 0%;
 }
@@ -126,9 +127,10 @@ img {
   text-align: center;
 }
 
-.main-weather {
+.description {
   text-align: center;
   margin: 0px;
+  text-transform: capitalize;
 }
 .change-temp {
   white-space: nowrap;
@@ -139,5 +141,9 @@ img {
 a {
   margin: 0 auto;
   display: block;
+  text-align: center;
+}
+
+.eboni {
   text-align: center;
 }

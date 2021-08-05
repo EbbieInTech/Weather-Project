@@ -19,9 +19,11 @@ newdate.innerHTML = changeDate(now);
 function showTemperature(response) {
   let mainTemperature = document.querySelector(".main-temp");
   let temperature = Math.round(response.data.main.temp);
-  mainTemperature.innerHTML = `${temperature} °F`;
   let newCity = document.querySelector("#selector-city");
+  let descriptionElement = document.querySelector(".description");
+  mainTemperature.innerHTML = `${temperature} °F`;
   newCity.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 //add a search engine & display name
