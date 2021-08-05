@@ -17,9 +17,11 @@ newdate.innerHTML = changeDate(now);
 
 //weather and geolocation api
 function showTemperature(response) {
-  let mainTemperature = document.querySelector("#main-temp");
+  let mainTemperature = document.querySelector(".main-temp");
   let temperature = Math.round(response.data.main.temp);
-  mainTemperature.innerHTML = `${temperature}`;
+  mainTemperature.innerHTML = `${temperature} °F`;
+  let newCity = document.querySelector("#selector-city");
+  newCity.innerHTML = response.data.name;
 }
 
 //add a search engine & display name

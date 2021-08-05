@@ -87,10 +87,11 @@
 }
 
 .city {
-  margin: 0px;
-  font-size: 35px;
+  display: block;
+  margin: 0 auto;
+  font-size: 29px;
   text-align: center;
-}
+  }
 
 #main-day.row {
   display: block;
@@ -104,6 +105,12 @@
 
 img {
   width: 60px;
+}
+
+.main-img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 .days {
   font-size: larger;
