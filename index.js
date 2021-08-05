@@ -17,6 +17,7 @@ newdate.innerHTML = changeDate(now);
 
 //weather and geolocation api
 function showTemperature(response) {
+  console.log(response.data);
   let mainTemperature = document.querySelector(".main-temp");
   let temperature = Math.round(response.data.main.temp);
   let newCity = document.querySelector("#selector-city");
