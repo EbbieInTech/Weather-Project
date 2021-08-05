@@ -24,7 +24,11 @@
   text-align: center;
 }
 
-.day-one, .day-two, .day-three, .day-four, .day-five {
+.day-one,
+.day-two,
+.day-three,
+.day-four,
+.day-five {
   font-weight: bold;
 }
 
@@ -91,7 +95,7 @@
   margin: 0 auto;
   font-size: 29px;
   text-align: center;
-  }
+}
 
 #main-day.row {
   display: block;
@@ -132,4 +136,8 @@ img {
   margin: 0 auto;
 }
 
-<!-- -->
+a {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
