@@ -24,11 +24,16 @@ function showTemperature(response) {
   let descriptionElement = document.querySelector(".description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
   mainTemperature.innerHTML = `${temperature} °F`;
   newCity.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute("src", `images/${response.data.weather[0].icon}`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 //add a search engine & display name
