@@ -56,6 +56,8 @@ function search(event) {
   axios.get(apiUrl).then(showTemperature);
 }
 
+// let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=imperial&appid=${key}`;
+
 function showPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
