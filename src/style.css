@@ -139,15 +139,9 @@ a {
   text-align: center;
 }
 
-.eboni {
-  text-align: center;
-}
-
-footer {
+small {
   display: block;
   margin: 0 auto;
-  font-size: 14px;
-  line-height: 18px;
   text-align: center;
   color: rgba(39, 33, 66, 0.4);
 }
