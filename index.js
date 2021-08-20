@@ -15,6 +15,14 @@ let now = new Date();
 let newdate = document.querySelector("#main-day");
 newdate.innerHTML = changeDate(now);
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 //forecast
 function displayForecast(response) {
   let forecast = response.data.daily;
